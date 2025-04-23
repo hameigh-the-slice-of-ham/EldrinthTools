@@ -2,18 +2,22 @@ import java.util.ArrayList;
 
 public class Node {
 
-    int mana;
-    int temp;
+    double mana;
 
     ArrayList<Element> elements = new ArrayList<Element>();
     ArrayList<Spell> spells = new ArrayList<Spell>();
 
-    public Node(int init_temp, int init_mana){
+    public Node(double init_mana){
 
         mana = init_mana;
-        temp = init_temp;
 
     }
+
+    public void setMana(double new_mana){
+        mana = new_mana;
+    }
+
+    
     
 
 }
